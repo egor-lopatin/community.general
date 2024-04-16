@@ -484,6 +484,7 @@ class Homebrew(object):
         cmd = [
             "{brew_path}".format(brew_path=self.brew_path),
             "info",
+            "--formula",
             "--json=v2",
             self.current_package,
         ]
